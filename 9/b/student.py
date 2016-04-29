@@ -1,0 +1,5 @@
+n,v1,v2 = map(int, input().split())
+stops = list(map(int, input().split()))
+uni = list(map(int, input().split()))
+nearest_stop = stops.index(min(stops, key=lambda x:abs(x-uni[0])) + 1)
+print(nearest_stop)
