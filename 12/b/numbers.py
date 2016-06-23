@@ -9,7 +9,4 @@ for x in range(len(n)):
             n[0] = temp
             break
 n = ''.join(n)
-if n == n2:
-    print('OK')
-else:
-    print('WRONG_ANSWER')
+print('OK' if n == n2 else 'WRONG_ANSWER')
