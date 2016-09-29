@@ -1,0 +1,5 @@
+n, k = map(int, input().split())
+l = list(map(int, input().split()))
+m = int(input())
+output = (sum(l) // 2) - (l[k] // 2)
+print('Bon Appetit' if output == m else abs(output - m))
