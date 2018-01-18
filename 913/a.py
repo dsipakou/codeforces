@@ -1,3 +1,4 @@
 n = int(input())
 m = int(input())
-print(m % (2**n))
+
+print(m % (1 << n))
