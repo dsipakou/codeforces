@@ -7,4 +7,7 @@ for i in range(n):
         right += 1
     else:
         left += 1
-print('YES' if right <= 1 or left <= 1 else 'NO')
+    if right > 1 and left > 1:
+        print('NO')
+        exit()
+print('YES')
