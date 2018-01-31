@@ -8,5 +8,6 @@ while b < n:
     a, b = b, a + b
     arr.append(b)
 for i in range(len(arr)):
-    s = s[:arr[i] - 1] + 'O' + s[arr[i]:]
+    if arr[i] <= n:
+        s = s[:arr[i] - 1] + 'O' + s[arr[i]:]
 print(s)
